@@ -1,3 +1,7 @@
+:root {
+    --color: orange;
+}
+
 body,
 body * {
     margin: 0;
@@ -10,4 +14,44 @@ body {
     padding: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
         sans-serif;
+}
+
+.virykle {
+    border: 1px solid var(--color);
+}
+.virykle > .top {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--color);
+}
+.virykle > .top > .skyle {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.virykle > .top > .skyle.ijungta {
+    background-color: var(--color);
+}
+.virykle > .bottom {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.virykle > .bottom > .jungiklis {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color);
+    border-radius: 0 50% 50%;
+    transform: rotate(0deg);
+    transition: all 1s;
+}
+.virykle > .bottom > .jungiklis.ijungta {
+    transform: rotate(90deg);
 }
